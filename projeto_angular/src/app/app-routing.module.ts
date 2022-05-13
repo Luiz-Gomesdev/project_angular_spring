@@ -13,10 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('./usuario/usuario.module').then(x => x.UsuarioModule)
 
   },
-  // {
-  //   path: 'estados',
-  //   loadChildren: () => import('.').then(x => x.CustomerAppSupplierModule)
-  // },
+  {
+    path: 'estados',
+    loadChildren: () => import('./estados/estados.module').then(x => x.EstadosModule)
+  },
   {
     path:'',
     pathMatch:'full',
